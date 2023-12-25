@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Workout Routine Generator
+    </title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="routine generator.css">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>
+            GetBuilt
+        </h1>
+        <p>
+            By Andy
+        </p>
+
+    </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="homepage.php">About</a></li>
+                <li><a href="routine generator.html">Routine Generator</a></li>
+                <li><a href="forum home.php">Forums</a></li>
+                <li style="float:right"><a href="signup.php">Sign Up</a></li>
+                <li style="float:right"><a href="login.php">Login</a></li>
+            </ul>
+        </div>
+
+        <h2 style="text-align: center; margin-top: 10%;">Workout Routine Generator</h2>
+
+        <button type="button" class="collapsible"> How to use the workout routine generator</button>
+        <div class="content">
+            <p>this is a test</p>
+        </div>
+
+        <div class="row">
+
+            <div id="user_input">
+                <h3 style="text-align: center;">Equipment</h3>
+                <form method="post">
+                    <label>Exercise Frequency (Days Per Week):</label><br>
+                    <input type="radio" id="2days" name="freq"> 2
+                    <input type="radio" id="3days" name="freq"> 3
+                    <input type="radio" id="4days" name="freq"> 4
+                    <input type="radio" id="5days" name="freq"> 5
+                    <input type="radio" id="6days" name="freq"> 6
+                    <br><br>
+
+                    <label>Goal:</label><br>
+                    <input type="radio" id="hype" name="goal"> Build Muscle
+                    <input type="radio" id="str" name="goal"> Build Strength
+                    <input type="radio" id="both" name="goal"> Build Muscle & Strength
+                    <br><br>
+
+                    <label>Equipment Available (Preset):</label><br>
+                    <input type="radio" name="equipment">Gym
+                    <input type="radio" name="equipment">Bodyweight
+                    <hr color="black">
+                    <input type="radio" name="equipment">Individual
+                    <br>
+
+                    <input type="checkbox">Dumbbells
+                    <input type="checkbox">Kettlebells
+                    <input type="checkbox">Barbell
+                    <input type="checkbox">Squat rack
+                    <input type="checkbox">Pull up bar
+                    <input type="checkbox">Rings
+                    <input type="checkbox">Flat Bench
+                    <input type="checkbox">Adjustable bench
+                    <input type="checkbox">Resistance Bands
+                    
+            </form>
+            </div>
+
+            <div id="routine_display">
+                <h3 style="text-align: center">Your Routine</h3>
+            </div>
+            
+        </div>
+    
+
+
+        
+
+    <script>
+        var collapse = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i=0; i < collapse.length; i++){
+            collapse[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                    content.style.maxHeight = null;
+                }
+                else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+
+            });
+        }
+    </script>
+    <script>
+
+    </script>
+</body>
+
+</html>

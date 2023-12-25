@@ -1,0 +1,43 @@
+.row{
+    display: flex;
+}
+
+#user_input{
+    background-color: lightsalmon;
+    margin: auto;
+    width: 300px;
+    padding: 20px;
+    flex: 50%;
+}
+
+#routine_display{
+    background-color: plum;
+    margin: auto;
+    width: 300px;
+    padding: 20px;
+    flex: 50%;
+}
+
+
+.collapsible{
+    background-color: aqua;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 100%;
+    margin-top: 2%;
+}
+
+.active, .collapsible:hover {
+    background-color: orange;
+}
+
+.content {
+    overflow: hidden;
+    padding: 0 15px;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    background-color: green;
+    margin-bottom: 2%;
+}
